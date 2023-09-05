@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 0px;
+    background: hsl(218, 23%, 16%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    background: hsl(217, 19%, 24%);
+    max-width: 500px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.caption {
+    font-size: 12px;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.text {
+    margin: 20px auto 0;
+    font-weight: 800;
+    font-size: 28px;
+    color: hsl(193, 38%, 86%);
+}
+
+.text::before, .text::after {
+    content: '"';
+}
+
+.divider {
+    margin: 40px 0;
+}
+
+.dice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 15px 15px 12px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto -57px;
+}
+
+.dice:hover {
+    box-shadow: 0 0 40px hsl(150, 100%, 66%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        margin: auto 20px;
+        max-width: 335px;
+    }
+}
